@@ -5,7 +5,7 @@ module.exports = {
 		filename: 'index.js'
 	},
 	devServer: {
-		// inline: true,
+		inline: true,
 		port: 3344
 	},
 	module: {
@@ -13,10 +13,10 @@ module.exports = {
 			{
 				test: /\.js$/,
 				exlude: /node_modules/,
-				loader: 'babel'
-				// query: {
-				// 	presets: ['es2015', 'react']
-				// }
+				loader: 'babel',
+				query: {
+					presets: ['es2015', 'react']
+				}
 			}
 		]
 	}
